@@ -1,0 +1,536 @@
+@charset "utf-8";
+/* CSS Document */
+
+body,ul,li,p,h1,h2,h3,span,section,article{
+	padding: 0;
+	margin:0;
+	box-sizing: border-box;
+}
+li,p,span,h1,h2,h3,h4,a{
+	font-family: 'Sawarabi Mincho', sans-serif;
+}
+
+.wrapper{
+	margin: 0 auto;
+	background-color: #f3f2ea;
+}
+
+.top_content{
+	position: relative;
+	width: 100%;
+	height: 85vh;
+	background-image: url(../img/TOP.png);
+	background-repeat: no-repeat;
+	background-position: 50% 80%;
+	background-size: cover;
+}
+.logo_area{
+	width: 200px;
+	margin: 0 auto;
+}
+.logo_area img{
+	width: 100%;
+	margin-top: calc( 5em + 2 * ( 30vw - 40em ) / (60 - 40) );
+}
+.menu_list{
+	display: flex;
+	list-style: none;
+	justify-content: center;
+}
+.menu_list li{
+	letter-spacing: 5px;
+	text-align: center;
+	line-height: 100px;
+	width: 150px;
+}
+.menu_list li:hover{
+	background-image: url(../img/maru.png);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: contain;
+}
+.menu_list li a{
+	text-decoration: none;
+	color: #ffffff;
+	font-size: 18px;
+}
+.business_list{
+	text-align: center;
+	margin-top: calc( 7em + 2 * ( 30vw - 30em ) / (60 - 40) );
+}
+.business_list li{
+	color: #ffffff;
+	letter-spacing: 2px;
+	margin-bottom: 5px;
+}
+.business_list span{
+	margin-right: 10px;
+}
+.yajirushi{
+	position: absolute;
+	width: 20px;
+	bottom: 30px;
+	display: block;
+	left: 50%;
+	-webkit-transform : translateX(-50%);
+  transform : translateX(-50%);
+}
+
+
+.news_wrapper{
+	position: relative;
+	width: 100%;
+	height: 15vh;
+	margin: 0 auto;
+	background-color: #375888;
+}
+.news_content{
+	position: absolute;
+	margin: 0 auto;
+	max-width: 1280px;
+	color: #FFFFFF;
+	display: flex;
+	align-items: center;
+	position: absolute;
+  	top: 50%;
+  	left: 50%;
+  	-webkit-transform : translate(-50%,-50%);
+  	transform : translate(-50%,-50%);
+}
+.news_content h2{
+	margin-right: 180px;
+	font-size: 20px;
+	font-weight: 300;
+}
+.news_content a{
+	text-decoration: none;
+	color: #FFFFFF;
+	justify-content: center;
+	margin: 0 auto;
+	font-size: 14px;
+}
+.news_content a span{
+	margin-right: 3px;
+}
+
+.consept_content{
+	margin: 0 auto;
+	text-align: center;
+	background-image: url(../img/guitar.png);
+	background-size: cover;
+	background-repeat: no-repeat;
+	color: #fff;
+	padding-top: 100px;
+	padding-bottom: 100px;
+}
+.consept_content h3{
+	width: 250px;
+	font-size: 24px;
+	font-weight: normal;
+	letter-spacing: 3px;
+	margin: 0 auto;
+	padding-bottom: 30px;
+	border-bottom: solid #fff 1px;
+}
+.consept_content p{
+	max-width:800px;
+	padding-top: 25px;
+	padding-bottom: 25px;
+	margin: 0 auto;
+	border-bottom: solid 1px #fff;
+	letter-spacing: 3px;
+}
+.consept_content .consept_p_first{
+	margin-top: 80px;
+	border-top: solid 1px #fff;
+}
+
+.main_content{
+	margin: 0 auto;
+	padding-top: 100px;
+	text-align: center;
+	background-color: #f3f2ea;
+}
+.main_content h3{
+	width: 250px;
+	font-size: 24px;
+	font-weight: normal;
+	margin: 0 auto 80px;
+	color: #375888;
+	padding-bottom: 30px;
+	letter-spacing: 3px;
+	border-bottom: solid 1px #375888;
+}
+.drink_wrapper{
+	display: flex;
+	justify-content: center;
+	background-image:url(../img/jin_back.png);
+	background-repeat: no-repeat;
+	background-size: contain;
+	background-position: 50% 20%;
+	margin-bottom: 60px;
+}
+.drink_left{
+	max-width: 320px;
+}
+.drink_left img{
+	width: 100%;
+}
+.drink_left p{
+	text-align: left;
+	font-size: 12px;
+}
+.drink_rignt{
+	max-width: 400px;
+	margin-left: 80px;
+	display: flex;
+	flex-direction: column;
+	-webkit-flex-direction: column;
+	justify-content: flex-end;
+}
+.drink_rignt p{
+	text-align: left;
+	margin-bottom: 100px;
+	font-size: 14px;
+	letter-spacing: 2px;
+}
+.drink_rignt a{
+	text-align: right;
+	color: #375888;
+	text-decoration: none;
+	letter-spacing: 2px;
+}
+.drink_rignt a span{
+	margin-left: 10px;
+}
+
+.food_wrapper{
+	width: 100%;
+	margin: 0 auto;
+	text-align: center;
+	background-image: url(../img/food_back.png);
+	background-repeat: no-repeat;
+	background-size: 800px;
+	background-position: 20% 90%;
+}
+
+.food_wrapper .food_top{
+	max-width: 800px;
+	margin:0 auto 50px;
+}
+.food_wrapper .food_top img{
+	width: 100%;
+}
+.food_wrapper .food_top p{
+	text-align: left;
+	font-size: 12px;
+}
+.food_description{
+	max-width: 350px;
+}
+.food_description p{
+	text-align: left;
+	font-size: 14px;
+	letter-spacing: 2px;
+}
+.food_bottom{
+	max-width: 800px;
+	margin: 0 auto;
+}
+.food_bottom a{
+	display: block;
+
+	text-decoration: none;
+	letter-spacing: 2px;
+	text-align: right;
+}
+.food_bottom a span{
+	margin-left: 10px;
+}
+
+.shop_about{
+	max-width: 800px;
+	margin: 200px auto 60px;
+	display: flex;
+	justify-content:space-between;
+}
+.shop_about img{
+	width: 100%;
+}
+.shop_logo_img{
+	max-width: 250px;
+}
+.shop_logo_img img{
+	margin-bottom: 60px;
+}
+.shop_discription{
+	margin-bottom: 60px;
+}
+.shop_discription p{
+	font-size: 14px;
+	margin-bottom: 5px;
+	margin-left: 10px;
+	letter-spacing: 2px;
+}
+.shop_discription a{
+	font-size: 14px;
+	color: #375888;
+	text-decoration: none;
+	margin-left: 10px;
+	letter-spacing: 2px;
+}
+.shop_discription a span{
+	margin-left: 10px;
+}
+.shop_information li{
+	list-style: none;
+	font-size: 14px;
+	margin-left: 10px;
+	margin-bottom: 5px;
+	letter-spacing: 2px;
+}
+.shop_information li span{
+	margin-left: 10px;
+}
+
+.shop_img{
+	max-width: 320px;
+}
+
+footer{
+	width: 100%;
+	height: 150px;
+	background-color: #375888;
+}
+
+footer h4{
+	display: block;
+	color: #fff;
+	font-weight: normal;
+	margin-top: 75px;
+	transform: translateY(55px);
+	text-align: center;
+}
+footer p{
+	display: block;
+	font-size: 12px;
+	color: #fff;
+	transform: translateY(65px);
+	text-align: center;
+}
+.hamburger .close{
+	visibility: hidden;
+}
+.hamburger .menu_toggle{
+	visibility: hidden;
+}
+.hamburger .close_toggle{
+	visibility: visible;
+}
+
+
+@media screen and (max-width: 896px) {
+	.top_content{
+		height: 70vh;
+	}
+	.logo_area img{
+		margin-top: calc( 5em + 2 * ( 100vw - 10em ) / (60 - 40) );
+	}
+	nav{
+		opacity: 0;
+		position: fixed;
+		width: 100vw;
+		height: 100vh;
+		left: 0;
+		top: 0;
+		background-color:#375888;
+		z-index: 3;
+		transform: translateX(100%);
+		transition: all .6s;
+		}
+	.js_menu_list{
+			transform: translateX(0%);
+			opacity: 1;
+		}
+	.menu_list{
+		margin-top:100px;
+		flex-direction: column;
+		-webkit-flex-direction: column;
+	}
+	.menu_list li{
+		text-align: left;
+		margin-left: 75px;
+	}
+	.business_list{
+		font-size: 12px;
+	}
+	.yajirushi{
+		display: none;
+	}
+	.news_wrapper{
+		height: 30vh;
+	}
+	.news_content{
+		flex-direction: column;
+		-webkit-flex-direction: column;
+	}
+	.news_content h2{
+		width: 150px;
+		margin: 0 auto;
+		font-size: 18px;
+		letter-spacing: 2px;
+		padding-bottom: 10px;
+		border-bottom: solid 1px #fff;
+		text-align: center;
+	}
+	.news_content a{
+		font-size: 14px;
+		width: 250px;
+		margin-top: 25px;
+	}
+	.consept_content{
+		background-size: cover;
+		background-position: 80% 10%;
+		padding-top: 50px;
+		padding-bottom: 50px;
+	}
+	.consept_content .consept_p_first{
+		margin-top: 25px;
+	}
+	.consept_content p{
+		padding-top: 10px;
+		padding-bottom: 10px;
+	}
+	.consept_content h3{
+		width: 150px;
+		font-size: 18px;
+		padding-bottom: 10px;
+	}
+	.main_content{
+		padding-top: 50px;
+	}
+	.main_content h3{
+		width: 150px;
+		font-size: 18px;
+		padding-bottom: 10px;
+	}
+	.drink_left{
+		min-width: 140px;
+		margin-left: 20px;
+	}
+	.drink_rignt{
+		max-width: 50%;
+		margin-left: 30px;
+		margin-right: 20px;
+	}
+	.drink_rignt p{
+		font-size: 12px;
+		margin-bottom: 25px;
+	}
+	.drink_rignt a{
+		min-width: 100px;
+		font-size: 10px;
+	}
+	.food_wrapper{
+		background-size: 110%;
+		background-position: 100% 50%;
+	}
+	.food_wrapper .food_top{
+		margin-left: 20px;
+		margin-right: 20px;
+	}
+	.food_bottom{
+		margin-right: 20px;
+		margin-left: 20px;
+	}
+	.food_bottom p{
+		font-size: 12px;
+	}
+	.food_bottom a{
+		font-size: 10px;
+		margin-top: 25px;
+	}
+	.shop_about{
+		margin-top: 60px;
+		justify-content: center;
+	}
+	.shop_logo_img{
+		min-width: 180px;
+		margin-right: 20px;
+		margin-left: 20px;
+	}
+	.shop_logo_img img{
+		display: block;
+		margin: 0 auto 60px;
+		width: 70%;
+	}
+	.shop_discription p{
+		font-size: 12px;
+		letter-spacing: 1px;
+	}
+	.shop_discription a{
+		font-size: 12px;
+	}
+	.shop_information li{
+		font-size: 12px;
+	}
+	.shop_img{
+		max-width: 180px;
+		margin-top: auto;
+		margin-bottom: 0;
+		margin-left: 20px;
+		margin-right: 20px;
+	}
+	.hamburger {
+	display: block;
+  position: fixed;
+  left: 20px;
+  top: 15px;
+  width: 50px;
+  height: 80px;
+  cursor: pointer;
+  z-index: 300;
+	}
+	.hamburger__line {
+  position: absolute;
+  left: 7px;
+  width: 35px;
+  height: 2px;
+  background-color: #111;
+  transition: all .6s;
+	}
+	.hamburger__line--1 {
+  top: 14px;
+	background-color: #fff;
+	}
+.hamburger__line--2 {
+  top: 30px;
+	background-color: #fff;
+	}
+.hamburger__line--3 {
+  top: 46px;
+	background-color: #fff;
+	}
+	.nav_open .hamburger__line--1 {
+	  transform: rotate(405deg);
+	  top: 30px;
+	}
+	.nav_open .hamburger__line--2{
+		width: 0;
+  	left: 50%;
+	}
+	.nav_open .hamburger__line--3 {
+	  transform: rotate(-405deg);
+	  top: 30px;
+	}
+	.hamburger p{
+		font-size: 12px;
+		top: 55px;
+		color: #fff;
+		left: 3px;
+		position: absolute;
+		/* transition: all .6s; */
+	}
+
+
+}
