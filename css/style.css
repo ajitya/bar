@@ -327,7 +327,9 @@ footer p{
 .hamburger .close_toggle{
 	visibility: visible;
 }
-
+.hamburger p{
+	visibility: hidden;
+}
 
 @media screen and (max-width: 896px) {
 	.top_content{
@@ -529,7 +531,7 @@ footer p{
 		color: #fff;
 		left: 3px;
 		position: absolute;
-		/* transition: all .6s; */
+		visibility: visible;
 	}
 
 
