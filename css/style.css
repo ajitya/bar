@@ -239,7 +239,7 @@ li,p,span,h1,h2,h3,h4,a{
 }
 .food_bottom a{
 	display: block;
-
+	color: #375888;
 	text-decoration: none;
 	letter-spacing: 2px;
 	text-align: right;
